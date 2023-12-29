@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Countdown Timer</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="container">
+      <div class="labels-container">
+        <div class="hrs">Hours </div>
+        <div class="mins">minutes</div>
+        <div class="secs">seconds</div>
+      </div>
+      <div class="inputs-container">
+        <input type="number" oninput="this.value = this.value.slice(0,2)" placeholder="00" id="hrs-fld"/>
+        <input type="number" oninput="this.value = this.value.slice(0,2)" placeholder="00" id="mins-fld"/>
+        <input type="number" oninput="this.value = this.value.slice(0,2)" placeholder="00" id="secs-fld"/>
+      </div>
+      <div class="btns-container">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
